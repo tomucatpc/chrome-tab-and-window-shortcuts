@@ -6,58 +6,89 @@
   <body>
     <table>
       <tr>
-        <th>Action</th>
+        <th class="action">Action</th>
         <th>Shortcut</th>
       </tr>
       <tr>
         <td>Open a new window</td>
-        <th><img src="images/0.jpg"></th>
+        <td><button type="button" id="newWindow">Ctrl + N</button></td>
       </tr>
       <tr>
         <td>Open a new window in Incognito mode</td>
+        <td><button type="button" id="incognito">Ctrl + Shift + N</button></td>
       </tr>
       <tr>
         <td>Open a new tab, and jump to it</td>
+        <td><button type="button" id="newTab">Ctrl + T</button></td>
       </tr>
       <tr>
         <td>Reopen previously closed tabs in the order they were closed</td>
+        <td><button type="button" id="reopen">Ctrl + Shift + T</button></td>
       </tr>
       <tr>
         <td>Jump to the next open tab</td>
+        <td><button type="button" id="next">Ctrl + Tab or Ctrl + PgDn</button></td>
       </tr>
       <tr>
         <td>Jump to the previous open tab</td>
+        <td><button type="button" id="previous">Ctrl + Tab or Ctrl + PgUp</button></td>
       </tr>
       <tr>
         <td>Jump to a specific tab</td>
+        <td><button type="button">Ctrl + 1 through Ctrl + 8</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <button type="button" class="btnGroup" id="button1">1</button>
+            <button type="button" class="btnGroup" id="button2">2</button>
+            <button type="button" class="btnGroup" id="button3">3</button>
+            <button type="button" class="btnGroup" id="button4">4</button>
+            <button type="button" class="btnGroup" id="button5">5</button>
+            <button type="button" class="btnGroup" id="button6">6</button>
+            <button type="button" class="btnGroup" id="button7">7</button>
+            <button type="button" class="btnGroup" id="button8">8</button>
+        </div>
+        </td>
       </tr>
       <tr>
         <td>Jump to the rightmost tab</td>
+        <td><button type="button" id="rightmost">Ctrl + 9</button></td>
       </tr>
       <tr>
         <td>Open your home page in the current tab</td>
+        <td><button type="button" id="home">Alt + Home</button></td>
       </tr>
       <tr>
         <td>Open the previous page from your browsing history in the current tab</td>
+        <td><button type="button" id="previousHistory">Alt + Right arrow</button></td>
       </tr>
       <tr>
         <td>Open the next page from your browsing history in the current tab</td>
+        <td><button type="button" id="nextHistory">Alt + Left arrow</button></td>
       </tr>
       <tr>
         <td>Close the current tab</td>
+        <td><button type="button" id="closeTab">Ctrl + W or Ctrl + F4</button></td>
       </tr>
       <tr>
         <td>Close the current window</td>
+        <td><button type="button" id="closeWindow">Ctrl + Shift + W or Alt + F4</button></td>
       </tr>
       <tr>
         <td>Minimize the current window</td>
+        <td><button type="button" id="minimize">Alt + Space then N</button></td>
       </tr>
       <tr>
         <td>Maximize the current window</td>
+        <td><button type="button" id="maximize">Alt + Space then X</button></td>
       </tr>
       <tr>
         <td>Quit Google Chrome</td>
+        <td><button type="button" id="quit">Alt + F then X</button></td>
       </tr>
     </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="popup.js"></script>    
   </body>
 </html>
