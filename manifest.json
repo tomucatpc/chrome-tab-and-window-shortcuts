@@ -1,6 +1,6 @@
 {
-  "name": "Tab and window shortcuts",
-  "description": "Shortcuts for tab and window actions for Windows and Linux.",
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
   "version": "1.20",
   "browser_action": {
     "default_popup": "popup.html"
@@ -12,5 +12,6 @@
   },
   "permissions": ["sessions"],
   "content_security_policy": "default-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+  "default_locale": "en",
   "manifest_version": 2
 }

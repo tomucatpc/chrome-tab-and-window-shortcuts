@@ -7,16 +7,13 @@ table {
   height: 100%;
 }
 
-.action {
+#action {
   width: 60%; 
 }
 
-th {
-  text-align: left;
-}
-
 th, td {
-  padding: 4px;
+  text-align: left;
+  padding: 2px;
 }
 
 tr:nth-child(even) {
@@ -24,6 +21,7 @@ tr:nth-child(even) {
 }
 
 button {
+  padding: 2px;
   width: 100%;
   font-size: 11px;
 }
