@@ -78,44 +78,6 @@ $(document).ready(function(){
   });
 });
 
-(function Jump_to_a_specific_tab() {
-  var button1 = document.getElementById("button1");
-  var button2 = document.getElementById("button2");
-  var button3 = document.getElementById("button3");
-  var button4 = document.getElementById("button4");
-  var button5 = document.getElementById("button5");
-  var button6 = document.getElementById("button6");
-  var button7 = document.getElementById("button7");
-  var button8 = document.getElementById("button8");
-
-  chrome.tabs.query({currentWindow: true}, function(tabs) {
-    button1.onclick = function () {      
-      if (tabs[0]) chrome.tabs.highlight({tabs: tabs[0].index});
-    };
-    button2.onclick = function () {      
-      if (tabs[1]) chrome.tabs.highlight({tabs: tabs[1].index});
-    };
-    button3.onclick = function () {      
-      if (tabs[2]) chrome.tabs.highlight({tabs: tabs[2].index});
-    };
-    button4.onclick = function () {      
-      if (tabs[3]) chrome.tabs.highlight({tabs: tabs[3].index});
-    };
-    button5.onclick = function () {      
-      if (tabs[4]) chrome.tabs.highlight({tabs: tabs[4].index});
-    };
-    button6.onclick = function () {      
-      if (tabs[5]) chrome.tabs.highlight({tabs: tabs[5].index});
-    };
-    button7.onclick = function () {      
-      if (tabs[6]) chrome.tabs.highlight({tabs: tabs[6].index});
-    };
-    button8.onclick = function () {      
-      if (tabs[7]) chrome.tabs.highlight({tabs: tabs[7].index});
-    };
-  });
-})();
-
 (function Jump_to_the_rightmost_tab() {
   var Jump_to_the_rightmost_tab = document.getElementById("rightmost_button");
 
