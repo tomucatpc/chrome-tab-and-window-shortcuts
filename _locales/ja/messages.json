@@ -3,61 +3,80 @@
     "message": "タブとウインドウのショートカット",
     "description": "Extension name"
   },
+
   "extDescription":{
     "message": "タブとウインドウのアクションのショートカットです。ショートカットキーはWindows、Linux用です。",
     "description": "Extension description"
   },
+
   "action_label":{
     "message": "アクション"
   },
+
   "shortcut_label":{
     "message":"ショートカット"
   },
+
   "newWindow_label":{
     "message": "新しいウィンドウを開く"
   },
+
   "incognito_label":{
     "message": "新しいウィンドウをシークレット モードで開く"
   },
+
   "newTab_label":{
     "message": "新しいタブを開いてそのタブに移動する"
   },
+
   "reopen_label":{
     "message": "閉じたタブを閉じた順序で再び開く"
   },
+
   "next_label":{
     "message": "開いている次のタブに移動する"
   },
+
   "previous_label":{
     "message": "開いている前のタブに移動する"
   },
+
   "specific_label":{
     "message": "特定のタブに移動する"
   },
+
   "rightmost_label":{
     "message": "右端のタブに移動する"
   },
+
   "home_label":{
     "message": "ホームページを現在のタブで開く"
   },
+
   "previousHistory_label":{
     "message": "現在のタブの閲覧履歴の中で前にあるページを開く"
   },
+
   "nextHistory_label":{
     "message": "現在のタブの閲覧履歴の中で次にあるページを開く"
   },
+
   "closeTab_label":{
     "message": "現在のタブを閉じる"
   },
+
   "closeWindow_label":{
     "message": "現在のウインドウを閉じる"
   },
+
   "minimize_label":{
     "message": "現在のウィンドウを最小化する"
   },
+
   "maximize_label":{
     "message": "現在のウィンドウを最大化する"
   },
+
   "quit_label":{
     "message": "Google Chromeを終了する"
   }

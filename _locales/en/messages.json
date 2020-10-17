@@ -2,60 +2,79 @@
   "extName":{
     "message": "Tab and window shortcuts"
   },
+
   "extDescription":{
     "message": "Shortcuts for tab and window actions for Windows and Linux."
   },
+
   "action_label":{
     "message": "Action"
   },
+
   "shortcut_label":{
     "message": "Shortcut"
   },
+
   "newWindow_label":{
     "message": "Open a new window"
   },
+
   "incognito_label":{
     "message": "Open a new window in Incognito mode"
   },
+
   "newTab_label":{
     "message": "Open a new tab, and jump to it"
   },
+
   "reopen_label":{
     "message": "Reopen previously closed tabs in the order they were closed"
   },
+
   "next_label":{
     "message": "Jump to the next open tab" 
   },
+
   "previsous_label":{
     "message": "Jump to the previous open tab"
   },
+
   "specific_label":{
     "message": "Jump to a specific tab"
   },
+
   "lightmost_label":{
     "message": "Jump to the rightmost tab"
   },
+
   "home_label":{
     "message": "Open your home page in the current tab"
   },
+
   "previousHistory_label":{
     "message": "Open the previous page from your browsing history in the current tab"
   },
+
   "nextHistory_label":{
     "message": "Open the next page from your browsing history in the current tab"
   },
+
   "closeTab_label":{
     "message": "Close the current tab"
   },
+
   "closeWindow_label":{
     "message": "Close the current window"
   },
+
   "minimize_label":{
     "message": "Minimize the current window"
   },
+
   "maximize_label":{
     "message": "Maximize the current window"
   },
+
   "quit_label":{
     "message": "Quit Google Chrome"
   }
