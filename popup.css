@@ -23,6 +23,5 @@ button {
 }
 
 .btnGroup {
-  float: left;
   display: none;
 }
