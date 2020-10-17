@@ -1,5 +1,5 @@
 (function Open_a_new_window() {
-  var Open_a_new_window = document.getElementById("newWindow");
+  var Open_a_new_window = document.getElementById("newWindow_button");
 
   Open_a_new_window.onclick = function () {
     chrome.windows.create({state : "maximized"});
@@ -7,7 +7,7 @@
 })();
 
 (function Open_a_new_window_in_Incognito_mode() {
-  var Open_a_new_window_in_Incognito_mode = document.getElementById("incognito");
+  var Open_a_new_window_in_Incognito_mode = document.getElementById("incognito_button");
 
   Open_a_new_window_in_Incognito_mode.onclick = function () {
     chrome.windows.create({incognito : true, state : "maximized"});
@@ -15,7 +15,7 @@
 })();
 
 (function Open_a_new_tab_and_jump_to_it() {
-  var Open_a_new_tab_and_jump_to_it = document.getElementById("newTab");
+  var Open_a_new_tab_and_jump_to_it = document.getElementById("newTab_button");
 
   Open_a_new_tab_and_jump_to_it.onclick = function () {
     chrome.tabs.create({active : true});
@@ -23,7 +23,7 @@
 })();
 
 (function Reopen_previsouly_closed_tabs_in_the_order_they_were_closed() {
-  var Reopen_previsouly_closed_tabs_in_the_order_they_were_closed = document.getElementById("reopen");
+  var Reopen_previsouly_closed_tabs_in_the_order_they_were_closed = document.getElementById("reopen_button");
   
   Reopen_previsouly_closed_tabs_in_the_order_they_were_closed.onclick = function () {
     chrome.sessions.restore();
@@ -31,7 +31,7 @@
 })();
 
 (function Jump_to_the_next_open_tab() {
-  var Jump_to_the_next_open_tab =  document.getElementById("next");
+  var Jump_to_the_next_open_tab =  document.getElementById("next_button");
   
   Jump_to_the_next_open_tab.onclick = function () {
     chrome.tabs.query({highlighted: true}, function (highlightedTabs) {
@@ -53,7 +53,7 @@
 })();
 
 (function Jump_to_the_previous_open_tab() {
-  var Jump_to_the_next_previous_tab =  document.getElementById("previous");
+  var Jump_to_the_next_previous_tab =  document.getElementById("previous_button");
   
   Jump_to_the_next_previous_tab.onclick = function () {
     chrome.tabs.query({highlighted: true}, function (highlightedTabs) {
@@ -73,7 +73,7 @@
 
 
 $(document).ready(function(){
-  $("#specific").click(function(){
+  $("#specific_button").click(function(){
     $(".btnGroup").toggle();
   });
 });
@@ -117,7 +117,7 @@ $(document).ready(function(){
 })();
 
 (function Jump_to_the_rightmost_tab() {
-  var Jump_to_the_rightmost_tab = document.getElementById("rightmost");
+  var Jump_to_the_rightmost_tab = document.getElementById("rightmost_button");
 
   Jump_to_the_rightmost_tab.onclick =  function () {
     chrome.tabs.query({currentWindow: true}, function (tabs) {
@@ -128,7 +128,7 @@ $(document).ready(function(){
 })();
 
 (function Open_your_home_page_in_the_current_tab() {
-  var Open_your_home_page_in_the_current_tab = document.getElementById("home");
+  var Open_your_home_page_in_the_current_tab = document.getElementById("home_button");
   
   Open_your_home_page_in_the_current_tab.onclick = function () {
     chrome.tabs.update({url : "chrome://newtab/"});    
@@ -136,21 +136,21 @@ $(document).ready(function(){
 })();
 
 (function Open_the_next_page_from_your_browsing_history_in_the_current_tab() {
-  var Open_the_next_page_from_your_browsing_history_in_the_current_tab = document.getElementById("nextHistory");
+  var Open_the_next_page_from_your_browsing_history_in_the_current_tab = document.getElementById("nextHistory_button");
   Open_the_next_page_from_your_browsing_history_in_the_current_tab.onclick = function () {
     chrome.tabs.goForward();
   };
 })();
 
 (function Open_the_previous_page_from_your_browsing_history_in_the_current_tab() {
-  var Open_the_previous_page_from_your_browsing_history_in_the_current_tab = document.getElementById("previousHistory");
+  var Open_the_previous_page_from_your_browsing_history_in_the_current_tab = document.getElementById("previousHistory_button");
   Open_the_previous_page_from_your_browsing_history_in_the_current_tab.onclick = function () {
     chrome.tabs.goBack();
   };
 })();
 
 (function Close_the_current_tab() {
-  var Close_the_current_tab = document.getElementById("closeTab");
+  var Close_the_current_tab = document.getElementById("closeTab_button");
   
   Close_the_current_tab.onclick = function () {
     chrome.tabs.query({highlighted: true}, function (highlightedTabs) {
@@ -160,7 +160,7 @@ $(document).ready(function(){
 })();
 
 (function Close_the_current_window() {
-  var Close_the_current_window = document.getElementById("closeWindow");
+  var Close_the_current_window = document.getElementById("closeWindow_button");
 
   Close_the_current_window.onclick = function () {
     chrome.windows.getCurrent(function (targetWindow) {
@@ -170,7 +170,7 @@ $(document).ready(function(){
 })();
 
 (function Minimize_the_current_window() {
-  var Minimize_the_current_window = document.getElementById("minimize");
+  var Minimize_the_current_window = document.getElementById("minimize_button");
 
   Minimize_the_current_window.onclick = function() {
     chrome.windows.getCurrent(function (targetWindow) {
@@ -180,7 +180,7 @@ $(document).ready(function(){
 })();
 
 (function Maximize_the_current_window() {
-  var Maximize_the_current_window = document.getElementById("maximize");
+  var Maximize_the_current_window = document.getElementById("maximize_button");
 
   Maximize_the_current_window.onclick = function() {
     chrome.windows.getCurrent(function (targetWindow) {
@@ -191,7 +191,7 @@ $(document).ready(function(){
 
 
 (function Quit_Google_Chrome() {
-  var Quit_Google_Chrome = document.getElementById("quit");
+  var Quit_Google_Chrome = document.getElementById("quit_button");
 
   Quit_Google_Chrome.onclick = function () {
     chrome.windows.getAll(function (targetWindows) {
