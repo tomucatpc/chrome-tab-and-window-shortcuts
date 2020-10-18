@@ -35,7 +35,7 @@
     "message": "Jump to the next open tab" 
   },
 
-  "previsous_label":{
+  "previous_label":{
     "message": "Jump to the previous open tab"
   },
 
@@ -43,7 +43,7 @@
     "message": "Jump to a specific tab"
   },
 
-  "lightmost_label":{
+  "rightmost_label":{
     "message": "Jump to the rightmost tab"
   },
 
