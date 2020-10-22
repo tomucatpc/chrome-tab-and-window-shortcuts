@@ -1,7 +1,7 @@
 {
   "name": "__MSG_extName__",
   "description": "__MSG_extDescription__",
-  "version": "1.21",
+  "version": "1.22.0",
   "browser_action": {
     "default_popup": "popup.html"
   },
@@ -12,6 +12,14 @@
   },
   "permissions": ["sessions"],
   "content_security_policy": "default-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Opens popup.html"
+    }
+  },
   "default_locale": "en",
   "manifest_version": 2
 }
